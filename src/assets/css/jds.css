@@ -3884,7 +3884,7 @@ div#loading-dialog {
 
 .hero-banner {
     padding: 10% 30px;
-    background: url(../images/hero-img.png);
+    /*background: url(../images/hero-img.png);*/
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
