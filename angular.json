@@ -21,15 +21,31 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public"
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/all.min.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/cluxp.css",
+              "src/assets/css/datatables.css",
+              "src/assets/css/animate.min.css",
+              "src/assets/css/aos.min.css",
+              "src/assets/css/jds.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/bootstrap.bundle.min.js",
+              "src/assets/js/cluxp.js",
+              "src/assets/js/datatables.min.js",
+              "src/assets/js/aos.min.js",
+              "src/assets/js/faqs.js",
+              "src/assets/js/jds.js"
+            ]
           },
           "configurations": {
             "production": {

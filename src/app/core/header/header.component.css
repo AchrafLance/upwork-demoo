@@ -1,0 +1,42 @@
+.pre-header {
+  background-color: #f6f6f6;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.pre-header a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .title {
+  margin-left: 15px;
+}
+
+.small-pre-header {
+  padding: 3px;
+  font-size: 0.8em;
+}
+
+.small-header {
+  padding: 5px;
+}
+
+.small-header .logo img {
+  max-height: 150px;
+}
+
+.small-header .title {
+  font-size: 1.5em;
+  margin-left: 10px;
+}

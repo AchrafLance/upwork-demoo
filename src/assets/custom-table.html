@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<!-- CrimsonLogic UX Practice R2-S2 Foundation -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Judiciary Design System</title>
+    <!-- Start of CSS Includes -->
+    <!-- Delete what you do not need to use, including comments like this line -->
+    <link href="css/all.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Minified CSS -->
+    <link href="css/cluxp.css" rel="stylesheet" type="text/css" />
+    <!-- CL UX Practice R2-S2 Foundation CSS -->
+    <link href="css/datatables.css" rel="stylesheet" type="text/css" />
+    <!-- DataTables CSS -->
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css" />
+    <!-- Animate Minified CSS -->
+    <link href="css/aos.min.css" rel="stylesheet" type="text/css" />
+    <!-- AOS: Animate on Scroll Minified CSS -->
+    <link href="css/nouislider.css" rel="stylesheet" type="text/css" />
+    <!-- Range Slider specific CSS -->
+    <link href="css/jds.css" rel="stylesheet" type="text/css" />
+    <!-- JDS specific CSS -->
+
+    <!-- End of CSS includes -->
+    <!-- Start of Deferred JS Includes -->
+    <!-- Delete what you do not need to use, including comments like this line -->
+    <script defer src="js/jquery.min.js"></script>
+    <!-- jQuery Minified JS -->
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Bundle Minified JS -->
+    <script defer src="js/cluxp.js"></script>
+    <!-- CL UX Practice R2-S2 Foundation JS -->
+    <script defer src="js/datatables.min.js"></script>
+    <!-- DataTables Minified JS -->
+    <script defer src="js/aos.min.js"></script>
+    <!-- AOS: Animate on Scroll Minified JS -->
+    <script defer src="js/faqs.js"></script>
+    <!-- CL UX Practice R2-S2 Searchable FAQs JS -->
+    <script src="js/wNumb.js"></script>
+    <!-- Required for Range Slider JS -->
+    <script src="js/nouislider.js"></script>
+    <!-- Range Slider JS -->
+    <script defer src="js/jds.js"></script>
+    <!-- Project specific JS -->
+    <!-- End of JS Includes -->
+  </head>
+  <body>
+    <!-- Start of R2-S2's Loader Encased Body Wrapper -->
+    <!-- If you are not using the loader, delete the next line -->
+    <div id="loader">
+      <div
+        id="loading-dialog"
+        class="modaH show"
+        tabindex="-1"
+        aria-modal="true"
+        style="display: block"
+      >
+        <div class="loader-main">
+          <div class="loader">Loading...</div>
+          <span>Just a moment. We are loading the content...</span
+          ><strong
+            ><img src="images/sg-courts-logo.svg" alt="" width="240"
+          /></strong>
+        </div>
+      </div>
+    </div>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th>&nbsp;</th>
+          <th><p>Mediation</p></th>
+          <th><p>Conciliation</p></th>
+          <th><p>Neutral evaluation</p></th>
+          <th><p>Arbitration</p></th>
+          <th><p>Expert determination</p></th>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Role of the third party</b></p>
+          </td>
+          <td>
+            <p>Guides parties to find a solution that meets their concerns</p>
+          </td>
+          <td><p>Guides parties and proposes solutions</p></td>
+          <td><p>Assesses the likelihood of success at trial</p></td>
+          <td>
+            <p>Decides on an outcome after each party presents their case</p>
+          </td>
+          <td>
+            <p>
+              Has expert knowledge and gives an opinion that could be a basis
+              for agreement
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Cost</b></p>
+          </td>
+          <td>
+            <p>Low cost</p>
+            <p>
+              (Example: mediation is free for most cases in the State Courts
+              <b>except</b> for mediation of a District Court case, which
+              generally costs $250)
+            </p>
+          </td>
+          <td>
+            <p>Low cost</p>
+            <p>
+              (Example: conciliation is free for most cases in the State Courts
+              <b>except</b> for conciliation of a District Court case, which
+              generally costs $250)
+            </p>
+          </td>
+          <td>
+            <p>Lower than a trial, but higher than mediation</p>
+            <p>
+              (Example: neutral evaluation is free for most cases in the State
+              Courts <b>except</b> for neutral evaluation of a District Court
+              case, which generally costs $250. There may be other legal fees
+              from your lawyer.)
+            </p>
+          </td>
+          <td>
+            <p>
+              Higher than mediation. Can sometimes be lower than a trial. The
+              arbitrator's fees must be paid by the parties.
+            </p>
+          </td>
+          <td>
+            <p>
+              Generally lower than a trial, but higher than mediation. The
+              expert's fees must be paid by the parties.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Speed</b></p>
+          </td>
+          <td><p>Fast</p></td>
+          <td><p>Fast</p></td>
+          <td><p>Faster than a trial, but slower than mediation</p></td>
+          <td>
+            <p>
+              Can be faster than a trial, but generally slower than mediation
+            </p>
+          </td>
+          <td><p>Faster than a trial, but slower than mediation</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Allows control over the outcome</b></p>
+          </td>
+          <td><p>Yes</p></td>
+          <td><p>Yes</p></td>
+          <td><p>Yes</p></td>
+          <td><p>No</p></td>
+          <td>
+            <p>
+              Yes. The expert's opinion does not determine the parties’ dispute
+              unless the parties agree to it.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>You will know the merits of your case</b></p>
+          </td>
+          <td><p>No</p></td>
+          <td><p>No</p></td>
+          <td><p>Yes</p></td>
+          <td><p>Yes</p></td>
+          <td><p>Yes</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Requires a lawyer</b></p>
+          </td>
+          <td><p>No</p></td>
+          <td><p>No</p></td>
+          <td><p>Yes</p></td>
+          <td><p>No</p></td>
+          <td><p>No</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Involves a technical expert's opinion</b></p>
+          </td>
+          <td><p>No</p></td>
+          <td><p>No</p></td>
+          <td><p>No</p></td>
+          <td><p>No</p></td>
+          <td><p>Yes</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Offered by the court</b></p>
+          </td>
+          <td><p>Yes (State Courts)</p></td>
+          <td><p>Yes (State Courts)</p></td>
+          <td><p>Yes (State Courts)</p></td>
+          <td><p>No</p></td>
+          <td><p>No</p></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="wrapper sticky" id="page">
+      <!-- If you do not need the Navbar to be sticky, remove the "sticky" keyword from the "wrapper" div above -->
+      <!-- If you are using the autohide Navbar, the "sticky" keyword must be present in the "wrapper" div above -->
+      <!-- Start of R2-S2's Scroll to Top Widget -->
+      <a href="javascript:" id="scroll-to-top" title="Scroll to Top"
+        ><span class="fas fa-chevron-up"></span
+      ></a>
+      <!-- End of Scroll to Top Widget -->
+      <!-- Start of Default Confirmation Modal -->
+      <div
+        class="modal fade"
+        id="default"
+        tabindex="-1"
+        aria-labelledby="default"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content has-icon alert alert-default">
+            <div class="modal-header">
+              <h3 class="modal-title">
+                <i class="fas fa-info-circle"></i>Confirm Action
+              </h3>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <i aria-hidden="true" class="fal fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Are you sure you want to take this
+                <strong>Specific Action</strong> ?
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-primary btn-action">
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Default Confirmation Modal -->
+      <!-- Start of Success Confirmation Modal -->
+      <div
+        class="modal fade"
+        id="success"
+        tabindex="-1"
+        aria-labelledby="success"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content has-icon alert alert-success">
+            <div class="modal-header">
+              <h3 class="modal-title">
+                <i class="fas fa-check-circle"></i>Confirm Action
+              </h3>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <i aria-hidden="true" class="fal fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Are you sure you want to take this
+                <strong>Specific Action</strong> ?
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-success btn-action">
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Success Confirmation Modal -->
+      <!-- Start of Warning Confirmation Modal -->
+      <div
+        class="modal fade"
+        id="warning"
+        tabindex="-1"
+        aria-labelledby="warning"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content has-icon alert alert-warning">
+            <div class="modal-header">
+              <h3 class="modal-title">
+                <i class="fas fa-exclamation-circle"></i>Confirm Action
+              </h3>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <i aria-hidden="true" class="fal fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Are you sure you want to take this
+                <strong>Specific Action</strong> ?
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-warning btn-action">
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Warning Confirmation Modal -->
+      <!-- Start of Error Confirmation Modal -->
+      <div
+        class="modal fade"
+        id="error"
+        tabindex="-1"
+        aria-labelledby="error"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content has-icon alert alert-error">
+            <div class="modal-header">
+              <h3 class="modal-title">
+                <i class="fas fa-times-circle"></i>Confirm Action
+              </h3>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <i aria-hidden="true" class="fal fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Are you sure you want to take this
+                <strong>Specific Action</strong> ?
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-error btn-action">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Error Confirmation Modal -->
+      <!-- Start of Example Confirmation Modal -->
+      <div
+        class="modal fade"
+        id="example"
+        tabindex="-1"
+        aria-labelledby="example"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content has-icon alert alert-example">
+            <div class="modal-header">
+              <h3 class="modal-title">
+                <i class="fal fa-lightbulb-on"></i>Confirm Action
+              </h3>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <i aria-hidden="true" class="fal fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Are you sure you want to take this
+                <strong>Specific Action</strong> ?
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-example btn-action">
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Example Confirmation Modal -->
+      <!-- Keep the components you need and delete the rest -->
+      <!-- Anything with inline styling from here on are meant to be deleted -->
+
+      <!-- Start of Bootstrap Collapsible Navbar -->
+      <!-- If you do not need the Navbar to be sticky, remove the "sticky" keyword from the "wrapper" div above -->
+      <!-- If you do not need a sticky autohide Navbar, remove the "-auto"keyword from the "navbar-container" div below -->
+      <table class="table">
+        <tbody>
+          <tr>
+            <th>&nbsp;</th>
+            <th><p>Mediation</p></th>
+            <th><p>Conciliation</p></th>
+            <th><p>Neutral evaluation</p></th>
+            <th><p>Arbitration</p></th>
+            <th><p>Expert determination</p></th>
+          </tr>
+          <tr>
+            <td>
+              <p><b>Role of the third party</b></p>
+            </td>
+            <td>
+              <p>Guides parties to find a solution that meets their concerns</p>
+            </td>
+            <td><p>Guides parties and proposes solutions</p></td>
+            <td><p>Assesses the likelihood of success at trial</p></td>
+            <td>
+              <p>Decides on an outcome after each party presents their case</p>
+            </td>
+            <td>
+              <p>
+                Has expert knowledge and gives an opinion that could be a basis
+                for agreement
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><b>Cost</b></p>
+            </td>
+            <td>
+              <p>Low cost</p>
+              <p>
+                (Example: mediation is free for most cases in the State Courts
+                <b>except</b> for mediation of a District Court case, which
+                generally costs $250)
+              </p>
+            </td>
+            <td>
+              <p>Low cost</p>
+              <p>
+                (Example: conciliation is free for most cases in the State
+                Courts <b>except</b> for conciliation of a District Court case,
+                which generally costs $250)
+              </p>
+            </td>
+            <td>
+              <p>Lower than a trial, but higher than mediation</p>
+              <p>
+                (Example: neutral evaluation is free for most cases in the State
+                Courts <b>except</b> for neutral evaluation of a District Court
+                case, which generally costs $250. There may be other legal fees
+                from your lawyer.)
+              </p>
+            </td>
+            <td>
+              <p>
+                Higher than mediation. Can sometimes be lower than a trial. The
+                arbitrator's fees must be paid by the parties.
+              </p>
+            </td>
+            <td>
+              <p>
+                Generally lower than a trial, but higher than mediation. The
+                expert's fees must be paid by the parties.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><b>Speed</b></p>
+            </td>
+            <td><p>Fast</p></td>
+            <td><p>Fast</p></td>
+            <td><p>Faster than a trial, but slower than mediation</p></td>
+            <td>
+              <p>
+                Can be faster than a trial, but generally slower than mediation
+              </p>
+            </td>
+            <td><p>Faster than a trial, but slower than mediation</p></td>
+          </tr>
+          <tr>
+            <td>
+              <p><b>Allows control over the outcome</b></p>
+            </td>
+            <td><p>Yes</p></td>
+            <td><p>Yes</p></td>
+            <td><p>Yes</p></td>
+            <td><p>No</p></td>
+            <td>
+              <p>
+                Yes. The expert's opinion does not determine the parties’
+                dispute unless the parties agree to it.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><b>You will know the merits of your case</b></p>
+            </td>
+            <td><p>No</p></td>
+            <td><p>No</p></td>
+            <td><p>Yes</p></td>
+            <td><p>Yes</p></td>
+            <td><p>Yes</p></td>
+          </tr>
+          <tr>
+            <td>
+              <p><b>Requires a lawyer</b></p>
+            </td>
+            <td><p>No</p></td>
+            <td><p>No</p></td>
+            <td><p>Yes</p></td>
+            <td><p>No</p></td>
+            <td><p>No</p></td>
+          </tr>
+          <tr>
+            <td>
+              <p><b>Involves a technical expert's opinion</b></p>
+            </td>
+            <td><p>No</p></td>
+            <td><p>No</p></td>
+            <td><p>No</p></td>
+            <td><p>No</p></td>
+            <td><p>Yes</p></td>
+          </tr>
+          <tr>
+            <td>
+              <p><b>Offered by the court</b></p>
+            </td>
+            <td><p>Yes (State Courts)</p></td>
+            <td><p>Yes (State Courts)</p></td>
+            <td><p>Yes (State Courts)</p></td>
+            <td><p>No</p></td>
+            <td><p>No</p></td>
+          </tr>
+        </tbody>
+      </table>
+      <header class="navbar-container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <!-- Menu Logo -->
+            <a class="navbar-brand" href="#"
+              ><img src="images/sg-courts-logo.svg" alt="Logo"
+            /></a>
+            <div class="navbar-toggler" onclick="menuMove(this)">
+              <div class="menu-icon">
+                <div class="menu-bar1"></div>
+                <div class="menu-bar2"></div>
+                <div class="menu-bar3"></div>
+              </div>
+            </div>
+            <div class="navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item mx-md-2">
+                  <a class="nav-link" href="#" title="Go to Item 2">About</a>
+                </li>
+                <li class="nav-item dropdown position-static">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Templates <span class="caret"></span
+                  ></a>
+
+                  <!--Add .menu-inline class if inline menu is required-->
+                  <div
+                    class="dropdown-menu menu-inline"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <div class="container">
+                      <a class="dropdown-item" href="page-empty.html" title=""
+                        >Header + Body (Empty) + Footer</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="page-with-content.html"
+                        title=""
+                        >Header + Body with Content + Footer</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="page-with-form.html"
+                        title=""
+                        >Header + Body with Form + Footer</a
+                      ><a class="dropdown-item" href="my-info.html" title=""
+                        >My Info</a
+                      ><a class="dropdown-item" href="faq.html" title="">FAQ</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown1"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Dropdown Menu <span class="caret"></span
+                  ></a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#" title="Go to Item 1A"
+                      >Dropdown Menu 1</a
+                    >
+                    <a class="dropdown-item" href="#" title="Go to Item 1B"
+                      >Dropdown Menu 2</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item dropdown position-static">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown2"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Components <span class="caret"></span
+                  ></a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="container megamenu">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a class="dropdown-item" href="#accordion-wrapper"
+                            >Accordion</a
+                          >
+                          <a class="dropdown-item" href="#badge-wrapper"
+                            >Badge</a
+                          >
+                          <a class="dropdown-item" href="#breadcrumb-wrapper"
+                            >Breadcrumb</a
+                          >
+                          <a class="dropdown-item" href="#buttons-wrapper"
+                            >Button</a
+                          >
+                          <a class="dropdown-item" href="#cards-wrapper"
+                            >Card</a
+                          >
+                          <a class="dropdown-item" href="#callouts-wrapper"
+                            >Callout</a
+                          >
+                          <a class="dropdown-item" href="#carousel-wrapper"
+                            >Carousel</a
+                          >
+                          <a class="dropdown-item" href="#checkbox-wrapper"
+                            >Checkbox</a
+                          >
+                          <a class="dropdown-item" href="#dropdown-wrapper"
+                            >Dropdown</a
+                          >
+                          <a class="dropdown-item" href="#hero-wrapper">Hero</a>
+                        </div>
+                        <div class="col-lg-4">
+                          <a class="dropdown-item" href="#icons-wrapper"
+                            >Icons</a
+                          ><a class="dropdown-item" href="#loader-wrapper"
+                            >Loader</a
+                          >
+                          <a class="dropdown-item" href="#modals-wrapper"
+                            >Modal</a
+                          >
+                          <a class="dropdown-item" href="#notfication-wrapper"
+                            >Notification</a
+                          >
+                          <a class="dropdown-item" href="#pagination-wrapper"
+                            >Pagination</a
+                          >
+                          <a class="dropdown-item" href="#popover-wrapper"
+                            >Popover</a
+                          >
+                          <a class="dropdown-item" href="#radiobutton-wrapper"
+                            >Radio Button</a
+                          >
+                          <a class="dropdown-item" href="#range-slider-wrapper"
+                            >Range Slider</a
+                          ><a class="dropdown-item" href="#scrolltotop-wrapper"
+                            >Scroll to top</a
+                          >
+                          <a class="dropdown-item" href="#tab-wrapper">Tab</a>
+                        </div>
+                        <div class="col-lg-4">
+                          <a class="dropdown-item" href="#simple-table-wrapper"
+                            >Table</a
+                          >
+                          <a class="dropdown-item" href="#tag-wrapper">Tag</a>
+                          <a class="dropdown-item" href="#textarea-wrapper"
+                            >Text Area</a
+                          >
+                          <a class="dropdown-item" href="#textinput-wrapper"
+                            >Text Input</a
+                          >
+                          <a class="dropdown-item" href="#timeline-wrapper"
+                            >Timeline</a
+                          >
+                          <a class="dropdown-item" href="#tooltip-wrapper"
+                            >Tooltip</a
+                          ><a class="dropdown-item" href="#typography-wrapper"
+                            >Typography</a
+                          >
+                          <a class="dropdown-item" href="#wizard-wrapper"
+                            >Wizard</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-md-auto">
+                <li class="nav-item ml-2 ml-md-0 my-2 my-md-0">
+                  <button
+                    class="btn btn-primary btn-lg"
+                    type="button"
+                    aria-label="Login"
+                    title="Login Now"
+                    onclick="javascript:location.href=''"
+                  >
+                    <span class="fal fa-unlock-alt"></span> Login
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- End of Bootstrap Collapsible Navbar -->
+      <!-- Start of Main Content -->
+      <main class="main-content">
+        <!-- Start of  Tables Sample -->
+
+        <!-- Start of Simple Table Sample -->
+        <section class="component-section" id="simple-table-wrapper">
+          <style>
+            .default-table th {
+              background: #f1e9e9 !important;
+            }</style
+          ><!--Just for demo. Do not use these style attributes.-->
+          <h2 class="text-center">Default table</h2>
+          <div class="container text-left">
+            <div class="table-responsive default-table">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Table Header</th>
+                    <th scope="col">Table Header</th>
+                    <th scope="col">Table Header</th>
+                    <th scope="col">Table Header</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Text goes here</td>
+                    <td>Text goes here</td>
+                    <td>Text goes here</td>
+                    <td>Text goes here</td>
+                  </tr>
+                  <tr>
+                    <td>Text goes here</td>
+                    <td>Text goes here</td>
+                    <td>Text goes here</td>
+                    <td>Text goes here</td>
+                  </tr>
+                  <tr>
+                    <td>Text goes here</td>
+                    <td>Text goes here</td>
+                    <td>Text goes here</td>
+                    <td>Text goes here</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- End of simple Table Sample -->
+          <!-- Start of Static Table Sample -->
+
+          <h2 class="text-center mt-5">Static table</h2>
+          <div class="container text-left">
+            <div class="static-table">
+              <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-title="#">1</td>
+                      <td data-title="First">Mark</td>
+                      <td data-title="Last">Otto</td>
+                      <td data-title="Status">
+                        <span class="jds-tag has-success-light">Approved</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-title="#">2</td>
+                      <td data-title="First">Jacob</td>
+                      <td data-title="Last">Thornton</td>
+                      <td data-title="Status">
+                        <span class="jds-tag has-error-light">Rejected</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th data-title="#">3</th>
+                      <td data-title="First">Larry</td>
+                      <td data-title="Last">the Bird</td>
+                      <td data-title="Status">
+                        <span class="jds-tag has-example-light">Example</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="'pagination-container'">
+                  <ul class="pagination justify-content-end">
+                    <li class="pager-item disabled">
+                      <a class="page-link" href="#"
+                        ><i class="fal fa-chevron-left"></i
+                        ><span class="sr-only">Previous</span></a
+                      >
+                    </li>
+                    <li class="pager-item active">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="pager-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="pager-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="pager-item">
+                      <a class="page-link" href="#"
+                        ><i class="fal fa-chevron-right"></i
+                        ><span class="sr-only">Next</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-center mt-5">DataTables</h2>
+          <div class="container text-left" id="section-datatables">
+            <table
+              id="datatables-example"
+              class="display nowrap dataTable dtr-inline collapsed"
+              style="width: 100%"
+            >
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Office</th>
+                  <th class="text-center">Age</th>
+                  <th style="width: 120px">Start date</th>
+                  <th style="width: 100px">Salary</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tiger Nixon</td>
+                  <td>System Architect</td>
+                  <td>Edinburgh</td>
+                  <td class="text-center">61</td>
+                  <td>2011/04/25</td>
+                  <td class="text-right">$320,800</td>
+                </tr>
+                <tr>
+                  <td>Garrett Winters</td>
+                  <td>Accountant</td>
+                  <td>Tokyo</td>
+                  <td class="text-center">63</td>
+                  <td>2011/07/25</td>
+                  <td class="text-right">$170,750</td>
+                </tr>
+                <tr>
+                  <td>Ashton Cox</td>
+                  <td>Junior Technical Author</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">66</td>
+                  <td>2009/01/12</td>
+                  <td class="text-right">$86,000</td>
+                </tr>
+                <tr>
+                  <td>Cedric Kelly</td>
+                  <td>Senior Javascript Developer</td>
+                  <td>Edinburgh</td>
+                  <td class="text-center">22</td>
+                  <td>2012/03/29</td>
+                  <td class="text-right">$433,060</td>
+                </tr>
+                <tr>
+                  <td>Airi Satou</td>
+                  <td>Accountant</td>
+                  <td>Tokyo</td>
+                  <td class="text-center">33</td>
+                  <td>2008/11/28</td>
+                  <td class="text-right">$162,700</td>
+                </tr>
+                <tr>
+                  <td>Brielle Williamson</td>
+                  <td>Integration Specialist</td>
+                  <td>New York</td>
+                  <td class="text-center">61</td>
+                  <td>2012/12/02</td>
+                  <td class="text-right">$372,000</td>
+                </tr>
+                <tr>
+                  <td>Herrod Chandler</td>
+                  <td>Sales Assistant</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">59</td>
+                  <td>2012/08/06</td>
+                  <td class="text-right">$137,500</td>
+                </tr>
+                <tr>
+                  <td>Rhona Davidson</td>
+                  <td>Integration Specialist</td>
+                  <td>Tokyo</td>
+                  <td class="text-center">55</td>
+                  <td>2010/10/14</td>
+                  <td class="text-right">$327,900</td>
+                </tr>
+                <tr>
+                  <td>Colleen Hurst</td>
+                  <td>Javascript Developer</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">39</td>
+                  <td>2009/09/15</td>
+                  <td class="text-right">$205,500</td>
+                </tr>
+                <tr>
+                  <td>Sonya Frost</td>
+                  <td>Software Engineer</td>
+                  <td>Edinburgh</td>
+                  <td class="text-center">23</td>
+                  <td>2008/12/13</td>
+                  <td class="text-right">$103,600</td>
+                </tr>
+                <tr>
+                  <td>Jena Gaines</td>
+                  <td>Office Manager</td>
+                  <td>London</td>
+                  <td class="text-center">30</td>
+                  <td>2008/12/19</td>
+                  <td class="text-right">$90,560</td>
+                </tr>
+                <tr>
+                  <td>Quinn Flynn</td>
+                  <td>Support Lead</td>
+                  <td>Edinburgh</td>
+                  <td class="text-center">22</td>
+                  <td>2013/03/03</td>
+                  <td class="text-right">$342,000</td>
+                </tr>
+                <tr>
+                  <td>Charde Marshall</td>
+                  <td>Regional Director</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">36</td>
+                  <td>2008/10/16</td>
+                  <td class="text-right">$470,600</td>
+                </tr>
+                <tr>
+                  <td>Haley Kennedy</td>
+                  <td>Senior Marketing Designer</td>
+                  <td>London</td>
+                  <td class="text-center">43</td>
+                  <td>2012/12/18</td>
+                  <td class="text-right">$313,500</td>
+                </tr>
+                <tr>
+                  <td>Tatyana Fitzpatrick</td>
+                  <td>Regional Director</td>
+                  <td>London</td>
+                  <td class="text-center">19</td>
+                  <td>2010/03/17</td>
+                  <td class="text-right">$385,750</td>
+                </tr>
+                <tr>
+                  <td>Michael Silva</td>
+                  <td>Marketing Designer</td>
+                  <td>London</td>
+                  <td class="text-center">66</td>
+                  <td>2012/11/27</td>
+                  <td class="text-right">$198,500</td>
+                </tr>
+                <tr>
+                  <td>Paul Byrd</td>
+                  <td>Chief Financial Officer (CFO)</td>
+                  <td>New York</td>
+                  <td class="text-center">64</td>
+                  <td>2010/06/09</td>
+                  <td class="text-right">$725,000</td>
+                </tr>
+                <tr>
+                  <td>Gloria Little</td>
+                  <td>Systems Administrator</td>
+                  <td>New York</td>
+                  <td class="text-center">59</td>
+                  <td>2009/04/10</td>
+                  <td class="text-right">$237,500</td>
+                </tr>
+                <tr>
+                  <td>Bradley Greer</td>
+                  <td>Software Engineer</td>
+                  <td>London</td>
+                  <td class="text-center">41</td>
+                  <td>2012/10/13</td>
+                  <td class="text-right">$132,000</td>
+                </tr>
+                <tr>
+                  <td>Dai Rios</td>
+                  <td>Personnel Lead</td>
+                  <td>Edinburgh</td>
+                  <td class="text-center">35</td>
+                  <td>2012/09/26</td>
+                  <td class="text-right">$217,500</td>
+                </tr>
+                <tr>
+                  <td>Jenette Caldwell</td>
+                  <td>Development Lead</td>
+                  <td>New York</td>
+                  <td class="text-center">30</td>
+                  <td>2011/09/03</td>
+                  <td class="text-right">$345,000</td>
+                </tr>
+                <tr>
+                  <td>Yuri Berry</td>
+                  <td>Chief Marketing Officer (CMO)</td>
+                  <td>New York</td>
+                  <td class="text-center">40</td>
+                  <td>2009/06/25</td>
+                  <td class="text-right">$675,000</td>
+                </tr>
+                <tr>
+                  <td>Caesar Vance</td>
+                  <td>Pre-Sales Support</td>
+                  <td>New York</td>
+                  <td class="text-center">21</td>
+                  <td>2011/12/12</td>
+                  <td class="text-right">$106,450</td>
+                </tr>
+                <tr>
+                  <td>Doris Wilder</td>
+                  <td>Sales Assistant</td>
+                  <td>Sydney</td>
+                  <td class="text-center">23</td>
+                  <td>2010/09/20</td>
+                  <td class="text-right">$85,600</td>
+                </tr>
+                <tr>
+                  <td>Angelica Ramos</td>
+                  <td>Chief Executive Officer (CEO)</td>
+                  <td>London</td>
+                  <td class="text-center">47</td>
+                  <td>2009/10/09</td>
+                  <td class="text-right">$1,200,000</td>
+                </tr>
+                <tr>
+                  <td>Gavin Joyce</td>
+                  <td>Developer</td>
+                  <td>Edinburgh</td>
+                  <td class="text-center">42</td>
+                  <td>2010/12/22</td>
+                  <td class="text-right">$92,575</td>
+                </tr>
+                <tr>
+                  <td>Jennifer Chang</td>
+                  <td>Regional Director</td>
+                  <td>Singapore</td>
+                  <td class="text-center">28</td>
+                  <td>2010/11/14</td>
+                  <td class="text-right">$357,650</td>
+                </tr>
+                <tr>
+                  <td>Brenden Wagner</td>
+                  <td>Software Engineer</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">28</td>
+                  <td>2011/06/07</td>
+                  <td class="text-right">$206,850</td>
+                </tr>
+                <tr>
+                  <td>Fiona Green</td>
+                  <td>Chief Operating Officer (COO)</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">48</td>
+                  <td>2010/03/11</td>
+                  <td class="text-right">$850,000</td>
+                </tr>
+                <tr>
+                  <td>Shou Itou</td>
+                  <td>Regional Marketing</td>
+                  <td>Tokyo</td>
+                  <td class="text-center">20</td>
+                  <td>2011/08/14</td>
+                  <td class="text-right">$163,000</td>
+                </tr>
+                <tr>
+                  <td>Michelle House</td>
+                  <td>Integration Specialist</td>
+                  <td>Sydney</td>
+                  <td class="text-center">37</td>
+                  <td>2011/06/02</td>
+                  <td class="text-right">$95,400</td>
+                </tr>
+                <tr>
+                  <td>Suki Burks</td>
+                  <td>Developer</td>
+                  <td>London</td>
+                  <td class="text-center">53</td>
+                  <td>2009/10/22</td>
+                  <td class="text-right">$114,500</td>
+                </tr>
+                <tr>
+                  <td>Prescott Bartlett</td>
+                  <td>Technical Author</td>
+                  <td>London</td>
+                  <td class="text-center">27</td>
+                  <td>2011/05/07</td>
+                  <td class="text-right">$145,000</td>
+                </tr>
+                <tr>
+                  <td>Gavin Cortez</td>
+                  <td>Team Leader</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">22</td>
+                  <td>2008/10/26</td>
+                  <td class="text-right">$235,500</td>
+                </tr>
+                <tr>
+                  <td>Martena Mccray</td>
+                  <td>Post-Sales support</td>
+                  <td>Edinburgh</td>
+                  <td class="text-center">46</td>
+                  <td>2011/03/09</td>
+                  <td class="text-right">$324,050</td>
+                </tr>
+                <tr>
+                  <td>Unity Butler</td>
+                  <td>Marketing Designer</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">47</td>
+                  <td>2009/12/09</td>
+                  <td class="text-right">$85,675</td>
+                </tr>
+                <tr>
+                  <td>Howard Hatfield</td>
+                  <td>Office Manager</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">51</td>
+                  <td>2008/12/16</td>
+                  <td class="text-right">$164,500</td>
+                </tr>
+                <tr>
+                  <td>Hope Fuentes</td>
+                  <td>Secretary</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">41</td>
+                  <td>2010/02/12</td>
+                  <td class="text-right">$109,850</td>
+                </tr>
+                <tr>
+                  <td>Vivian Harrell</td>
+                  <td>Financial Controller</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">62</td>
+                  <td>2009/02/14</td>
+                  <td class="text-right">$452,500</td>
+                </tr>
+                <tr>
+                  <td>Timothy Mooney</td>
+                  <td>Office Manager</td>
+                  <td>London</td>
+                  <td class="text-center">37</td>
+                  <td>2008/12/11</td>
+                  <td class="text-right">$136,200</td>
+                </tr>
+                <tr>
+                  <td>Jackson Bradshaw</td>
+                  <td>Director</td>
+                  <td>New York</td>
+                  <td class="text-center">65</td>
+                  <td>2008/09/26</td>
+                  <td class="text-right">$645,750</td>
+                </tr>
+                <tr>
+                  <td>Olivia Liang</td>
+                  <td>Support Engineer</td>
+                  <td>Singapore</td>
+                  <td class="text-center">64</td>
+                  <td>2011/02/03</td>
+                  <td class="text-right">$234,500</td>
+                </tr>
+                <tr>
+                  <td>Bruno Nash</td>
+                  <td>Software Engineer</td>
+                  <td>London</td>
+                  <td class="text-center">38</td>
+                  <td>2011/05/03</td>
+                  <td class="text-right">$163,500</td>
+                </tr>
+                <tr>
+                  <td>Sakura Yamamoto</td>
+                  <td>Support Engineer</td>
+                  <td>Tokyo</td>
+                  <td class="text-center">37</td>
+                  <td>2009/08/19</td>
+                  <td class="text-right">$139,575</td>
+                </tr>
+                <tr>
+                  <td>Thor Walton</td>
+                  <td>Developer</td>
+                  <td>New York</td>
+                  <td class="text-center">61</td>
+                  <td>2013/08/11</td>
+                  <td class="text-right">$98,540</td>
+                </tr>
+                <tr>
+                  <td>Finn Camacho</td>
+                  <td>Support Engineer</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">47</td>
+                  <td>2009/07/07</td>
+                  <td class="text-right">$87,500</td>
+                </tr>
+                <tr>
+                  <td>Serge Baldwin</td>
+                  <td>Data Coordinator</td>
+                  <td>Singapore</td>
+                  <td class="text-center">64</td>
+                  <td>2012/04/09</td>
+                  <td class="text-right">$138,575</td>
+                </tr>
+                <tr>
+                  <td>Zenaida Frank</td>
+                  <td>Software Engineer</td>
+                  <td>New York</td>
+                  <td class="text-center">63</td>
+                  <td>2010/01/04</td>
+                  <td class="text-right">$125,250</td>
+                </tr>
+                <tr>
+                  <td>Zorita Serrano</td>
+                  <td>Software Engineer</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">56</td>
+                  <td>2012/06/01</td>
+                  <td class="text-right">$115,000</td>
+                </tr>
+                <tr>
+                  <td>Jennifer Acosta</td>
+                  <td>Junior Javascript Developer</td>
+                  <td>Edinburgh</td>
+                  <td class="text-center">43</td>
+                  <td>2013/02/01</td>
+                  <td class="text-right">$75,650</td>
+                </tr>
+                <tr>
+                  <td>Cara Stevens</td>
+                  <td>Sales Assistant</td>
+                  <td>New York</td>
+                  <td class="text-center">46</td>
+                  <td>2011/12/06</td>
+                  <td class="text-right">$145,600</td>
+                </tr>
+                <tr>
+                  <td>Hermione Butler</td>
+                  <td>Regional Director</td>
+                  <td>London</td>
+                  <td class="text-center">47</td>
+                  <td>2011/03/21</td>
+                  <td class="text-right">$356,250</td>
+                </tr>
+                <tr>
+                  <td>Lael Greer</td>
+                  <td>Systems Administrator</td>
+                  <td>London</td>
+                  <td class="text-center">21</td>
+                  <td>2009/02/27</td>
+                  <td class="text-right">$103,500</td>
+                </tr>
+                <tr>
+                  <td>Jonas Alexander</td>
+                  <td>Developer</td>
+                  <td>San Francisco</td>
+                  <td class="text-center">30</td>
+                  <td>2010/07/14</td>
+                  <td class="text-right">$86,500</td>
+                </tr>
+                <tr>
+                  <td>Shad Decker</td>
+                  <td>Regional Director</td>
+                  <td>Edinburgh</td>
+                  <td class="text-center">51</td>
+                  <td>2008/11/13</td>
+                  <td class="text-right">$183,000</td>
+                </tr>
+                <tr>
+                  <td>Michael Bruce</td>
+                  <td>Javascript Developer</td>
+                  <td>Singapore</td>
+                  <td class="text-center">29</td>
+                  <td>2011/06/27</td>
+                  <td class="text-right">$183,000</td>
+                </tr>
+                <tr>
+                  <td>Donna Snider</td>
+                  <td>Customer Support</td>
+                  <td>New York</td>
+                  <td class="text-center">27</td>
+                  <td>2011/01/25</td>
+                  <td class="text-right">$112,000</td>
+                </tr>
+              </tbody>
+              <!-- Table footer
+               <tfoot>
+                   <tr>
+                       <th>Name</th>
+                       <th>Position</th>
+                       <th>Office</th>
+                       <th class="text-center">Age</th>
+                       <th>Start date</th>
+                       <th>Salary</th>
+                   </tr>
+               </tfoot>
+               -->
+            </table>
+          </div>
+        </section>
+        <!-- End of Static Table Sample -->
+        <!-- Start of DataTables Sample -->
+
+        <!-- End of DataTables Sample -->
+      </main>
+      <!-- End of Main Content -->
+
+      <!-- Start of Footer Block -->
+
+      <footer class="jds-footer">
+        <div class="container">
+          <div class="top-section sitemap">
+            <h2 class="jds-footer-sitemap-header text-left">
+              <img src="images/sg-courts-logo-white.svg" alt="" />
+            </h2>
+            <div class="footer-links">
+              <div class="row">
+                <div class="col-md-3">
+                  <h4>Main link one</h4>
+                  <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h4>Main link two</h4>
+                  <ul class="columns">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                    <li><a href="#">Link 8</a></li>
+                    <li><a href="#">Link 9</a></li>
+                    <li><a href="#">Link 10</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h4>Main link three</h4>
+                  <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="divider" />
+          <div class="bottom-section">
+            <div class="row">
+              <div class="col-lg-9">
+                <div class="footer-links">
+                  <a
+                    href="https://tech.gov.sg/report_vulnerability"
+                    target="_blank"
+                    >Report Vulnerability
+                    <i class="fal fa-external-link ml-1"></i
+                  ></a>
+                  <a href="#">Privacy Statement</a>
+                  <a href="#">Terms of Use</a>
+                  <a href="https://www.reach.gov.sg/" target="_blank"
+                    >Reach.gov.sg <i class="fal fa-external-link ml-1"></i
+                  ></a>
+                </div>
+                <div class="powered-by mt-3">
+                  Powered by <img src="images/cl-logo.png" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-3 mobile-mt-3 copyright text-right">
+                <div>© 2020 Government of Singapore</div>
+                <div>Last updated: 15 Jan 2021</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer Block -->
+    </div>
+  </body>
+  <script>
+    var stepsSlider = document.getElementById("steps-slider");
+    var input0 = document.getElementById("lower-value");
+    var input1 = document.getElementById("higher-value");
+    var inputs = [input0, input1];
+
+    noUiSlider.create(stepsSlider, {
+      start: [20, 80],
+      connect: true,
+      tooltips: [true, wNumb({ decimals: 1 })],
+      // Steps: 0, 2, 4, 6, 8, 10, 20, 30, 40, 50, 70, 75, 80, 90, 95, 100
+      range: {
+        min: [0, 2],
+        "10%": [10, 10],
+        "50%": [50, 20],
+        "70%": [70, 5],
+        max: 100,
+      },
+    });
+
+    stepsSlider.noUiSlider.on("update", function (values, handle) {
+      inputs[handle].value = values[handle];
+    });
+
+    // Listen to keydown events on the input field.
+    inputs.forEach(function (input, handle) {
+      input.addEventListener("change", function () {
+        stepsSlider.noUiSlider.setHandle(handle, this.value);
+      });
+
+      input.addEventListener("keydown", function (e) {
+        var values = stepsSlider.noUiSlider.get();
+        var value = Number(values[handle]);
+
+        // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
+        var steps = stepsSlider.noUiSlider.steps();
+
+        // [down, up]
+        var step = steps[handle];
+
+        var position;
+
+        // 13 is enter,
+        // 38 is key up,
+        // 40 is key down.
+        switch (e.which) {
+          case 13:
+            stepsSlider.noUiSlider.setHandle(handle, this.value);
+            break;
+
+          case 38:
+            // Get step to go increase slider value (up)
+            position = step[1];
+
+            // false = no step is set
+            if (position === false) {
+              position = 1;
+            }
+
+            // null = edge of slider
+            if (position !== null) {
+              stepsSlider.noUiSlider.setHandle(handle, value + position);
+            }
+
+            break;
+
+          case 40:
+            position = step[0];
+
+            if (position === false) {
+              position = 1;
+            }
+
+            if (position !== null) {
+              stepsSlider.noUiSlider.setHandle(handle, value - position);
+            }
+
+            break;
+        }
+      });
+    });
+  </script>
+</html>
